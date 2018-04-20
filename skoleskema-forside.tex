@@ -1,0 +1,19 @@
+\documentclass{standalone}
+\pagestyle{empty}
+\usepackage{tikz} 
+\usepackage{ifthen} 
+\usepackage{graphicx} 
+\renewcommand*\ttdefault{lmvtt}
+\usepackage[letterspace=120]{microtype}
+\renewcommand{\familydefault}{\ttdefault}
+\definecolor{blue}{HTML}{3c3475}
+\begin{document}
+\begin{tikzpicture}
+    \fill[blue, use as bounding box] (-1,-1) rectangle (16,11);
+    \draw[thick, white] (-1,-0.5) -- (16,-0.5);
+    \draw[thick, white] (-1,10.5) -- (16,10.5);
+    \node at (3.5,7) {\includegraphics[scale=0.2]{dfp-logo.pdf}};
+    \node at (11.5,8) {\includegraphics[scale=0.18]{title.pdf}};
+    \node at (11.7,1.5) {\includegraphics[scale=0.18]{nameplate-line-white.pdf}};
+\end{tikzpicture}
+\end{document}
